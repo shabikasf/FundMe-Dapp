@@ -1,2 +1,2 @@
 # FundMe-Dapp
-Decentralized application based on the concept of "Buy Me Coffee"
+Decentralized application based on the concept of "Buy Me a Coffee"
