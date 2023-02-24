@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Fund me</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="container">
+    <h3>Buy a coffee for shab_uwu</h3>
+    <div class="subscription">
+      <ul>
+        <li class="active">One-off</li>
+        <li>Monthly</li>
+      </ul>
+    </div>
+    <div class="container-quantity">
+      <div class="logo">
+      <i class="fa-solid fa-mug-saucer fa-2x"style="color: #1A120B" ></i>
+      <span>0.01ETH each</span>
+      </div>
+      <div class="quantity">
+        <div id="inc"><i class="fa-solid fa-plus"></i></div>
+        <div class="count">10</div>
+        <div id="dec"><i class="fa-solid fa-minus"></i></div>
+      </div>
+    </div>
+    <div class="ans">$30</div>
+    <textarea name="comment" id="textarea" cols="30" rows="10">Enter your comments</textarea>
+    <div class="btn">
+      <button id="btn1" onclick="connect()">Connect</button>
+      <button id="btn2"onclick="buy()">support $30</button>
+    </div>
+  </div>
+  <div class="image">
+    <img src="kofi.png" alt="kofi">
+  </div>
+  <!-- <h1> “Today’s good mood is sponsored by coffee.”</h1> -->
+  <script src="index.js"></script>
+  <script type="module">
+    import { connect, buy } from "./provider.js";
+    btn1.addEventListener("click", connect);
+    btn2.addEventListener("click", buy);
+  </script>
+  
+</body>
+</html>
